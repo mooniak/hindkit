@@ -107,7 +107,7 @@ class Builder(object):
     def generate_designspace(self):
 
         process = subprocess.Popen(
-            ['AFDKOPython', 'AFDKOPython/generate_designspace.py'],
+            ['python', 'AFDKOPython/generate_designspace.py'],
             stdin = subprocess.PIPE,
             cwd = kit.__path__[0],
         )
